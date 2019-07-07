@@ -13,6 +13,7 @@ public:
 	virtual ~CDBOption();
 	BOOL InitInstance();
 	void GetRecordContent();
+	BOOL OnInitDialog();
 
 	_ConnectionPtr m_pConnection;
 	_RecordsetPtr m_pRecordset;
@@ -46,4 +47,19 @@ public:
 	afx_msg void OnButtonPrev();
 	afx_msg void OnButtonWrite();
 	afx_msg void OnButtonDelete();
-		};
+	afx_msg void OnButtonChange();
+	CListCtrl m_list;
+	enum {
+		EListIndexCode = 0,
+		EListIndexName,
+		EListIndexSex,
+		EListIndexAge,
+		EListIndexMaxLimit
+	};
+	afx_msg void OnButtonListread();
+	void UpdateListData();
+	// 获取导入路径的编辑框变量
+	CString m_strImportFilePath;
+	afx_msg void OnButtonInpath();
+	afx_msg void OnButtonReadfile();
+};

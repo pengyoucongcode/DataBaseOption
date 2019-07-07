@@ -20,8 +20,14 @@
 #define IDC_BUTTON_NEXT                 1010
 #define IDC_BUTTON_LAST                 1011
 #define IDC_BUTTON_WRITE                1012
-#define IDC_BUTTON1                     1013
 #define IDC_BUTTON_DELETE               1013
+#define IDC_BUTTON_CHANGE               1014
+#define IDC_LIST1                       1015
+#define IDC_BUTTON_LISTREAD             1016
+#define IDC_EDIT_IMPORTPATH             1017
+#define IDC_BUTTON_INPATH               1018
+#define IDC_BUTTON3                     1019
+#define IDC_BUTTON_READFILE             1019
 #define ID_32771                        32771
 #define ID_DB_MENU                      32772
 #define ID_                             32773
@@ -32,7 +38,7 @@
 #ifndef APSTUDIO_READONLY_SYMBOLS
 #define _APS_NEXT_RESOURCE_VALUE        312
 #define _APS_NEXT_COMMAND_VALUE         32774
-#define _APS_NEXT_CONTROL_VALUE         1014
+#define _APS_NEXT_CONTROL_VALUE         1020
 #define _APS_NEXT_SYMED_VALUE           310
 #endif
 #endif
